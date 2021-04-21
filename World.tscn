@@ -1,0 +1,358 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Art/door1.png" type="Texture" id=1]
+[ext_resource path="res://Art/stairs1.png" type="Texture" id=2]
+[ext_resource path="res://Art/player.png" type="Texture" id=3]
+[ext_resource path="res://Game.gd" type="Script" id=4]
+[ext_resource path="res://Art/wall1.png" type="Texture" id=5]
+[ext_resource path="res://Art/ladder1.png" type="Texture" id=6]
+[ext_resource path="res://Art/stone1.png" type="Texture" id=7]
+[ext_resource path="res://Art/ground1.png" type="Texture" id=8]
+[ext_resource path="res://Art/black.png" type="Texture" id=9]
+[ext_resource path="res://Art/light.png" type="Texture" id=11]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 0, 36, 0, 36, 36, 0, 36 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 36, 0, 36, 36, 0, 36 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 36, 0, 36, 36, 0, 36 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 36, 0, 36, 36, 0, 36 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 36, 0, 36, 36, 0, 36 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 36, 0, 36, 36, 0, 36 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 36, 0, 36, 36, 0, 36 )
+
+[sub_resource type="TileSet" id=8]
+0/name = "ladder1.png 6"
+0/texture = ExtResource( 6 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 36, 36 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "door1.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 36, 36 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 1 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "wall1.png 2"
+2/texture = ExtResource( 5 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 36, 36 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 3 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "stone1.png 3"
+3/texture = ExtResource( 7 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 36, 36 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 5 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "ground1.png 4"
+4/texture = ExtResource( 8 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 36, 36 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "stairs1.png 5"
+5/texture = ExtResource( 2 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 36, 36 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 7 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+
+[sub_resource type="TileSet" id=9]
+0/name = "black.png 0"
+0/texture = ExtResource( 9 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 36, 36 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 8 )
+cell_size = Vector2( 36, 36 )
+format = 1
+
+[node name="VisibilityMap" type="TileMap" parent="."]
+tile_set = SubResource( 9 )
+cell_size = Vector2( 36, 36 )
+cell_tile_origin = 1
+centered_textures = true
+format = 1
+tile_data = PoolIntArray( 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 0, 0, 393231, 0, 0, 393232, 0, 0, 393233, 0, 0, 393234, 0, 0, 393235, 0, 0, 393236, 0, 0, 458764, 0, 0, 458767, 0, 0, 458768, 0, 0, 458770, 0, 0, 589841, 0, 0, 589842, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 655384, 0, 0, 655385, 0, 0, 720920, 0, 0, 917526, 0, 0, 917527, 0, 0, 983059, 0, 0, 983060, 0, 0, 983061, 0, 0, 983062, 0, 0 )
+
+[node name="Player" type="Sprite" parent="."]
+position = Vector2( 612, 360 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2( 17.5, 0 )
+current = true
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+
+[node name="Blind" type="Light2D" parent="Player"]
+visible = false
+position = Vector2( 18, 18 )
+scale = Vector2( 1.96875, 1.9 )
+texture = ExtResource( 11 )
+mode = 3
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+light_mask = 0
+margin_right = 1260.0
+margin_bottom = 36.0
+color = Color( 0.180392, 0.180392, 0.180392, 0.717647 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level" type="Label" parent="CanvasLayer"]
+light_mask = 0
+margin_top = -35.0
+margin_right = 126.0
+rect_scale = Vector2( 2, 2 )
+text = "Level: "
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP" type="Label" parent="CanvasLayer"]
+light_mask = 0
+margin_left = 252.0
+margin_top = -36.0
+margin_right = 414.0
+margin_bottom = -1.0
+rect_scale = Vector2( 2, 2 )
+text = "Health: "
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Poisoned" type="Label" parent="CanvasLayer"]
+visible = false
+light_mask = 0
+margin_left = 504.0
+margin_top = 648.0
+margin_right = 630.0
+margin_bottom = 666.0
+rect_scale = Vector2( 2, 2 )
+text = "Poisoned"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Blinded" type="Label" parent="CanvasLayer"]
+visible = false
+light_mask = 0
+margin_left = 540.0
+margin_top = 684.0
+margin_right = 630.0
+margin_bottom = 702.0
+rect_scale = Vector2( 2, 2 )
+text = "Blinded"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="CanvasLayer"]
+light_mask = 0
+margin_left = 576.0
+margin_right = 720.0
+margin_bottom = 18.0
+rect_scale = Vector2( 2, 2 )
+text = "Score: "
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Win" type="ColorRect" parent="CanvasLayer"]
+visible = false
+light_mask = 0
+margin_top = 36.0
+margin_right = 1260.0
+margin_bottom = 720.0
+color = Color( 0, 0, 0, 0.682353 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CanvasLayer/Win"]
+light_mask = 0
+margin_left = 468.0
+margin_top = 216.0
+margin_right = 630.0
+margin_bottom = 234.0
+rect_scale = Vector2( 2, 2 )
+text = "You Win!"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/Win"]
+light_mask = 0
+margin_left = 504.0
+margin_top = 396.0
+margin_right = 630.0
+margin_bottom = 416.0
+rect_scale = Vector2( 2, 2 )
+text = "Restart"
+
+[node name="Lose" type="ColorRect" parent="CanvasLayer"]
+visible = false
+light_mask = 0
+margin_top = 36.0
+margin_right = 1260.0
+margin_bottom = 720.0
+color = Color( 0.101961, 0, 0, 0.682353 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CanvasLayer/Lose"]
+light_mask = 0
+margin_left = 468.0
+margin_top = 216.0
+margin_right = 630.0
+margin_bottom = 234.0
+rect_scale = Vector2( 2, 2 )
+text = "You Died. :("
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/Lose"]
+light_mask = 0
+margin_left = 504.0
+margin_top = 396.0
+margin_right = 630.0
+margin_bottom = 416.0
+rect_scale = Vector2( 2, 2 )
+text = "Restart"
+[connection signal="pressed" from="CanvasLayer/Win/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Lose/Button" to="." method="_on_Button_pressed"]
